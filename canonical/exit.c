@@ -48,28 +48,6 @@ int main() {
     }
 
     return 0;
-}    pid = fork();
-    if (pid == 0) {
-        test_exit(); // 子进程调用 exit()
-    } else {
-        waitpid(pid, &status, 0); // 等待子进程退出
-        end = get_time_us();
-        printf("Time taken by exit(): %lld us\n", end - start);
-    }
-
-    // 测试 _exit()
-    printf("Starting _exit() test...\n");
-    start = get_time_us();
-    pid = fork();
-    if (pid == 0) {
-        test__exit(); // 子进程调用 _exit()
-    } else {
-        waitpid(pid, &status, 0); // 等待子进程退出
-        end = get_time_us();
-        printf("Time taken by _exit(): %lld us\n", end - start);
-    }
-
-    return 0;
 }
 
 /*
