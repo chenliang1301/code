@@ -52,6 +52,7 @@ int main() {
 
 /*
 环境：https://www.onlinegdb.com/
+选择C语言。
 Starting exit() test...
 Testing exit()...
 This is a test for exit().
