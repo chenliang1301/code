@@ -50,3 +50,6 @@ result/
 # for unittest
 unittest/example_test_result
 unittest/env_config.py
+
+# 忽略 OpenCV 构建产物
+yolov8_pose/3rdparty/opencv/opencv-android-sdk-build/
