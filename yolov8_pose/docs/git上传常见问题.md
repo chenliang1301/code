@@ -216,6 +216,10 @@ git status -sb
 git log --oneline origin/upload-yolov8_pose -1
 ```
 
+``` bash
+上传code仓库并指定分支yolov
+```
+
 ## 11. 本次工程上传约定
 
 - 远端：`https://github.com/chenliang1301/code.git`
