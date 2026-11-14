@@ -211,14 +211,14 @@ make install
 
 # Package demo runtime configuration even when its CMake file has no install rule.
 # Keep the source directory name so --tennis-config configs/tennis_pose.conf works.
-for config_dir in configs config; do
-    config_source="${ROOT_PWD}/${BUILD_DEMO_PATH}/../${config_dir}"
-    if [[ -d "${config_source}" ]]; then
-        mkdir -p "${INSTALL_DIR}/${config_dir}"
-        cp -a "${config_source}/." "${INSTALL_DIR}/${config_dir}/"
-        echo "Installed configuration: ${INSTALL_DIR}/${config_dir}"
-    fi
-done
+# for config_dir in configs config; do
+#     config_source="${ROOT_PWD}/${BUILD_DEMO_PATH}/../${config_dir}"
+#     if [[ -d "${config_source}" ]]; then
+#         mkdir -p "${INSTALL_DIR}/${config_dir}"
+#         cp -a "${config_source}/." "${INSTALL_DIR}/${config_dir}/"
+#         echo "Installed configuration: ${INSTALL_DIR}/${config_dir}"
+#     fi
+# done
 
 # Check if there is a rknn model in the install directory
 suffix=".rknn"
